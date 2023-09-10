@@ -25,9 +25,9 @@ import UserProfilePicture from '../common/UserProfilePicture';
 
 const HomeScreen = () => {
   // let [fontsLoaded] = useFonts({
-  //     'Roboto Regular': require('../assets/fonts/Roboto Regular.ttf'),
-  //     'Urbanist ExtraBold': require('../assets/fonts/Urbanist ExtraBold.ttf'),
-  //     'Urbanist Medium': require('../assets/fonts/Urbanist Medium.ttf'),
+  //     'Roboto Regular': require('../../../assets/fonts/Roboto Regular.ttf'),
+  //     'Urbanist ExtraBold': require('../../../assets/fonts/Urbanist ExtraBold.ttf'),
+  //     'Urbanist Medium': require('../../../assets/fonts/Urbanist Medium.ttf'),
   // });
 
   // if (!fontsLoaded) {

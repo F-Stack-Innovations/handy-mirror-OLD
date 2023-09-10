@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
+    "start": "npx expo start --dev-client",
+    "tunnel": "npx expo start --tunnel",
+    "android": "npx expo run:android",
+    "ios": "npx expo run:ios",
+    "web": "npx expo start --web",
     "git": "cd ../../ && npm run git",
-    "fix": "npx expo install --fix"
+    "fix": "npx expo install --fix",
+    "doctor": "npx expo-doctor"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.18.2",

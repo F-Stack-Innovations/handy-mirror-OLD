@@ -235,3 +235,10 @@ npx expo install --fix
 # 2. Run doctor for check your compatibility
 npm run doctor
 ```
+
+## How start this application on a virtual machine
+
+```sh
+# 1. Démarrer le projet via un tunnel.
+npx expo start --tunnel
+```

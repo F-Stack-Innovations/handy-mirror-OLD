@@ -9,7 +9,15 @@
 
 // Dépendances
 import { useState } from 'react';
-import { StyleSheet, View, Text, Pressable, Image, Modal } from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  Pressable,
+  Image,
+  Modal,
+  ScrollView,
+} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -24,7 +32,7 @@ const Config = {
 };
 
 // Utilitaire
-import Tools from '../../utilities/Tools'; // charge index.js
+import Tools from '../../utilities/Tools';
 
 // Composant
 import MyInputText from '../common/MyInputText';
@@ -94,11 +102,13 @@ const SignInScreen = () => {
 
       {/* Icone / Email / Password / Button */}
       <View style={styles.formContainer}>
-        <Image
-          style={styles.formImage}
-          resizeMode="cover"
-          source={require('../../../assets/images/main.png')}
-        />
+        <View style={styles.ImageContainer}>
+          <Image
+            style={styles.formImage}
+            resizeMode="cover"
+            source={require('../../../assets/images/main.png')}
+          />
+        </View>
         <View style={styles.inputContainer}>
           <MyInputText
             placeholder={'Entrez votre adresse mail'}
@@ -211,10 +221,17 @@ const styles = StyleSheet.create({
     width: '90%',
     backgroundColor: Tools.color.light.green,
     borderRadius: Tools.border.size.sm,
-    marginBottom: '15%',
+    marginBottom: '10%',
+    height: '60%',
+  },
+  ImageContainer: {
+    height: '50%',
+    width: '50%',
   },
   formImage: {
-    marginBottom: '5%',
+    height: '100%',
+    width: '100%',
+    marginBottom: '10%',
   },
   inputContainer: {
     width: '90%',

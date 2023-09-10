@@ -9,7 +9,14 @@
 
 // Dépendances
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, Pressable, Modal } from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  Pressable,
+  Modal,
+  ScrollView,
+} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import axios from 'axios';
 
@@ -17,7 +24,7 @@ import axios from 'axios';
 import configSingleton from '../../config/settings/Configuration';
 
 // Utilitaire
-import Tools from '../../utilities/Tools'; // charge index.js
+import Tools from '../../utilities/Tools';
 
 // Composants
 import MyInputText from '../common/MyInputText';

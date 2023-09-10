@@ -22,7 +22,7 @@ import { StatusBar } from 'expo-status-bar';
 import { AntDesign } from '@expo/vector-icons';
 
 // Utilitaire
-import Tools from './src/utilities/Tools'; // charge index.js
+import Tools from './src/utilities/Tools';
 
 // Screens
 import SignInScreen from './src/components/screens/SignInScreen';
